@@ -1,0 +1,32 @@
+:root {
+  --primary: rgb(139, 172, 218);
+  --secondary: rgb(0, 255, 247);
+  --dark: rgb(13, 25, 43);
+  --dark-card: rgb(20, 37, 61);
+  --dark-line: rgb(47, 65, 91);
+}
+
+#root {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.font-outfit {
+  font-family: "Outfit", sans-serif;
+}
+
+.bg-card {
+  background-color: var(--dark-card);
+}
+
+.accent-dark {
+  border-top: 1px solid rgb(47, 65, 91);
+}
+
+.img-hover:hover {
+  opacity: 1;
+}
+
+.link-hover:hover {
+  color: var(--secondary);
+}
