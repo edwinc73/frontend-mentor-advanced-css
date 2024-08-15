@@ -1,0 +1,14 @@
+@import "../../App.scss";
+footer {
+  .footer_soclink {
+    @extend .link-hover;
+    &:before {
+      left: 0;
+      right: 0;
+      bottom: -0.6rem;
+    }
+  }
+  .footer__navitem {
+    @extend .link-hover;
+  }
+}

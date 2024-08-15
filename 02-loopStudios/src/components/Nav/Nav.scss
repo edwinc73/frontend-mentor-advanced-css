@@ -1,21 +1,6 @@
+@import "../../App.scss";
 nav {
   .nav__item {
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      height: 2px;
-      left: 1.7rem;
-      right: 1.7rem;
-      bottom: 0;
-      display: block;
-      opacity: 0;
-      background-color: white;
-      transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
-    &:hover:before {
-      opacity: 1;
-    }
+    @extend .link-hover;
   }
 }

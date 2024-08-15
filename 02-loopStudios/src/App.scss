@@ -18,3 +18,23 @@ p {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
 }
+
+.link-hover {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: 0;
+    display: block;
+    opacity: 0;
+    background-color: white;
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  &:hover:before {
+    opacity: 1;
+  }
+}

@@ -9,9 +9,11 @@ function App() {
   return (
     <>
       <Nav />
-      <Hero />
-      <ARLeader />
-      <Creations />
+      <main>
+        <Hero />
+        <ARLeader />
+        <Creations />
+      </main>
       <Footer />
     </>
   );
