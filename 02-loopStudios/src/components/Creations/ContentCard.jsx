@@ -18,9 +18,9 @@ export const ContentCard = ({ name, img }) => {
         />
       </div>
       <h3
-        className="absolute bottom-6 left-6 right-6 font-josefins text-3xl
+        className="absolute bottom-3 left-3 lg:bottom-6 lg:left-6 lg:right-6 font-josefins text-2xl lg:text-3xl
       uppercase font-light min-h-[2lh]word-spacing
-      leading-tight h-[4.5rem] text-white transition"
+      leading-tight lg:h-[4.5rem] text-white transition"
         dangerouslySetInnerHTML={{ __html: name }}
       ></h3>
     </article>

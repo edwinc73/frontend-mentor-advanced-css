@@ -12,11 +12,11 @@ const Creations = () => {
       id="creations-section"
       className="max-w-7xl mx-auto pt-12 pb-24 px-5  md:px-6 lg:px-8 xl:px-10"
     >
-      <div className="creations__title flex justify-center lg:justify-between ">
-        <h2 className="text-center text-4xl md:text-5xl lg:text-7xl font-josefins font-light uppercase tracking-wider leading-12">
+      <div className="creations__title flex justify-center lg:justify-between items-center">
+        <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-josefins font-light uppercase ">
           Our Creations
         </h2>
-        <button className="hidden lg:block uppercase bg-black border border-black text-white px-10 font-alta text-sm tracking-[0.4rem] hover:bg-white hover:text-black transition">
+        <button className="hidden lg:block uppercase bg-white border border-black text-black px-9 py-2 h-fit font-alta text-sm tracking-[0.4rem] hover:bg-white hover:text-black transition">
           see all
         </button>
       </div>
@@ -27,7 +27,7 @@ const Creations = () => {
       </div>
       {isMobile && (
         <div className="flex justify-center items-center mt-8 w-full ">
-          <button className="lg:block uppercase h-[2.5rem] bg-white border border-black text-black px-10 font-alta text-sm tracking-[0.4rem] hover:text-black transition">
+          <button className="lg:block uppercase bg-white border border-black text-black px-9 py-2 h-fit font-alta text-sm tracking-[0.4rem] hover:text-black transition">
             see all
           </button>
         </div>

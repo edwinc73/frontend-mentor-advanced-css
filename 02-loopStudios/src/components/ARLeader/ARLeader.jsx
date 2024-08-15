@@ -9,7 +9,7 @@ const ARLeader = () => {
       <div className="lg:flex items-end">
         <img src={vrImage} className="mx-auto " alt="person using VR headset" />
         <div className="text-center lg:text-left pt-12 lg:pt-24 lg:pl-24 pb-0 pr-0 bg-white lg:ml-[-10rem] outline-white outline-3 ">
-          <h2 className="text-4xl lg:text-5xl xl:text-6xl font-josefins font-light uppercase tracking-wider leading-12">
+          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-josefins font-light uppercase tracking-wider leading-12">
             The leader in interactive VR
           </h2>
 
