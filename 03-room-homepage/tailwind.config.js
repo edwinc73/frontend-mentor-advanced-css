@@ -3,8 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      darkGray100: "hsl(0, 0%, 63%)",
-      darkGray200: "hsl(0, 0%, 27%)",
+      colors: {
+        "dark-gray-100": "#A1A1A1",
+        "dark-gray-00": "#454545",
+      },
     },
   },
   plugins: [],
