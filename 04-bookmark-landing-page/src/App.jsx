@@ -1,28 +1,65 @@
 import "./App.scss";
+import Contact from "./component/Contact/Contact";
+import Download from "./component/Download/Download";
+import Faq from "./component/FAQ/FAQ";
+import Features from "./component/Features/Features";
+import Footer from "./component/Footer/Footer";
+import Nav from "./component/Nav/Nav";
+import Hero from "./component/Hero/Hero";
 
 function App() {
-  return null;
+  return (
+    <>
+      <header>
+        <Nav />
+        <Hero />
+      </header>
+      <main>
+        <Features />
+        <Download />
+        <Faq />
+      </main>
+      <footer>
+        <Contact />
+        <Footer />
+      </footer>
+    </>
+  );
 }
 
 export default App;
-// Features Pricing Contact Login A Simple Bookmark Manager A clean and simple
-// interface to organize your favourite websites. Open a new browser tab and
+// Features Pricing Contact Login
+
+// A Simple Bookmark Manager
+//  A clean and simple interface to organize your favourite websites. Open a new browser tab and
 // see your sites load instantly. Try it for free. Get it on Chrome Get it on
-// Firefox Features Our aim is to make it quick and easy for you to access your
+// Firefox
+
+// Features
+
+// Our aim is to make it quick and easy for you to access your
 // favourite websites. Your bookmarks sync between your devices so you can
-// access them on the go. Simple Bookmarking Speedy Searching Easy Sharing
-// Bookmark in one click Organize your bookmarks however you like. Our simple
+// access them on the go.
+
+// Simple Bookmarking Speedy Searching Easy Sharing
+//
+// Bookmark in one click
+// Organize your bookmarks however you like. Our simple
 // drag-and-drop interface gives you complete control over how you manage your
 // favourite sites. More Info Intelligent search Our powerful search feature
 // will help you find saved sites in no time at all. No need to trawl through
 // all of your bookmarks. More Info Share your bookmarks Easily share your
 // bookmarks and collections with others. Create a shareable link that you can
-// send at the click of a button. More Info Download the extension We’ve got
+// send at the click of a button.
+// More Info
+// Download the extension
+// We’ve got
 // more browsers in the pipeline. Please do let us know if you’ve got a
 // favourite you’d like us to prioritize. Add to Chrome Minimum version 62 Add
 // & Install Extension Add to Firefox Minimum version 55 Add & Install
-// Extension Add to Opera Minimum version 46 Add & Install Extension Frequently
-// Asked Questions Here are some of our FAQs. If you have any other questions
+// Extension Add to Opera Minimum version 46 Add & Install Extension
+// Frequently Asked Questions
+// Here are some of our FAQs. If you have any other questions
 // you’d like answered please feel free to email us.
 
 // <!-- Question 1 -->

@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        rubik: ["Rubik", "sans-serif"],
+      },
       colors: {
         "primary-blue": "hsl(231,69%,60%)",
         "secondary-red": "hsl(0,94%,66%)",
