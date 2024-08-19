@@ -1,12 +1,23 @@
+#root {
+  overflow-x: clip;
+}
+
+.right.highlight::before {
+  left: -31rem;
+  border-radius: 0 999px 999px 0;
+}
+
+.left.highlight::before {
+  right: -13rem;
+  border-radius: 999px 0 0 999px;
+}
+
 .highlight:before {
   content: "";
   position: absolute;
   background-color: hsl(231, 69%, 60%);
-  width: 100%;
-  top: 9rem;
-  right: -15rem;
-  height: 80%;
+  width: 60rem;
+  height: 22rem;
   border: none;
-  border-radius: 999px 0 0 999px;
   z-index: -1;
 }

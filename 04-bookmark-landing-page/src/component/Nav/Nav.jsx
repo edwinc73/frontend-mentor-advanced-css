@@ -15,7 +15,7 @@ const MenuItem = ({ children }) => (
 
 function Nav() {
   return (
-    <nav className="mx-auto max-w-6xl py-12 flex justify-between items-center">
+    <nav className="mx-auto max-w-6xl py-10 flex justify-between items-center">
       <a href="./" className="nav__link">
         <img src={logo} alt="bookmark logo" />
       </a>

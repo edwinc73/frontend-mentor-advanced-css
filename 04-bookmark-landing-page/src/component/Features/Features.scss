@@ -1,0 +1,7 @@
+#features-section {
+  .features__tabItem {
+    &.active {
+      border-bottom: 4px solid hsl(0, 94%, 66%);
+    }
+  }
+}

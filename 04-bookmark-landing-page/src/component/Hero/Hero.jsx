@@ -5,8 +5,8 @@ import heroImage from "../../assets/images/illustration-hero.svg";
 
 function Hero() {
   return (
-    <Section>
-      <div className="mx-auto max-w-6xl h-fit flex justify-between ">
+    <Section id="hero-section">
+      <div className="mx-auto max-w-6xl h-fit flex justify-between items-center ">
         <div className="flex flex-col gap-10 justify-start text-left min-w-[40%]">
           <h1 className="text-5xl font-bold text-neutral-dark leading-tight">
             A Simple Bookmark Manager
@@ -25,7 +25,7 @@ function Hero() {
             </Button>
           </div>
         </div>
-        <div className="hero__img relative w-full h-full highlight mr-[-21rem] translate-x-10">
+        <div className="hero__img relative w-full h-full left highlight before:top-[9rem] mr-[-21rem] translate-x-16">
           <img
             src={heroImage}
             alt="bookmark systems design"
