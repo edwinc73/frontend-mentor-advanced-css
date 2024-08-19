@@ -67,11 +67,11 @@ const TabTitle = ({ id, title, currentTab, setCurrentTab }) => {
 const TabContent = ({ currentContent, currentTab }) => {
   return (
     <div className="features__tabItem mt-20 flex">
-      <div className="features__image relative right highlight before:top-[6rem] w-6/12 h-full ">
+      <div className="features__image relative right highlight before:top-[8rem] w-6/12 h-full ">
         <img
           src={currentContent.img}
           className={`h-[24rem] z-20 ${
-            currentTab > 0 ? "translate-x-20 translate-y-2" : "translate-y-4"
+            currentTab > 0 ? "translate-x-20 translate-y-2" : "-translate-x-6"
           } `}
           alt=""
         />
