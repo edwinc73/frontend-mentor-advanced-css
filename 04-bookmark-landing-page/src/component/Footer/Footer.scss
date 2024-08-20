@@ -1,0 +1,6 @@
+@import "../../App.scss";
+.footer_socLinks {
+  &:hover {
+    @extend .icon-hover;
+  }
+}

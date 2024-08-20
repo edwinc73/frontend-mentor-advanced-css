@@ -56,8 +56,8 @@ const TabTitle = ({ id, title, currentTab, setCurrentTab }) => {
         setCurrentTab(id);
       }}
       className={` w-64 features__tabItem ${
-        currentTab == id ? "active text-neutral-dark font-semibold" : ""
-      } font-rubik text-gray-600 border-b-[1px] py-6 px-10 hover:text-secondary-red hover:font-semibold transition-colors duration-200 ease-in-out`}
+        currentTab == id ? "active text-neutral-dark font-medium" : ""
+      } font-rubik text-gray-600 border-b-[1px] font-medium py-6 px-10 hover:text-secondary-red hover:font-medium transition-colors duration-200 ease-in-out`}
     >
       {title}
     </button>

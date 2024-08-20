@@ -21,3 +21,8 @@
   border: none;
   z-index: -1;
 }
+
+.icon-hover {
+  filter: brightness(0) saturate(100%) invert(59%) sepia(39%) saturate(5090%)
+    hue-rotate(326deg) brightness(100%) contrast(97%);
+}
