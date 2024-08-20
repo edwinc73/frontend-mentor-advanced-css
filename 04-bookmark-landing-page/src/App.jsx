@@ -29,13 +29,6 @@ function App() {
 
 export default App;
 
-//  Add to Chrome Minimum version 62 Add
-// & Install Extension Add to Firefox Minimum version 55 Add & Install
-// Extension Add to Opera Minimum version 46 Add & Install Extension
-// Frequently Asked Questions
-// Here are some of our FAQs. If you have any other questions
-// you’d like answered please feel free to email us.
-
 // <!-- Question 1 -->
 // What is Bookmark?
 
