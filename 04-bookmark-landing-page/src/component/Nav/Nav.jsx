@@ -84,7 +84,7 @@ function Nav() {
             </MenuItem>
             <hr className="border-1 opacity-50 w-full" />
             <li className="w-full mt-1" role="menuitem">
-              <button className="px-6 min-w-32 w-full py-3 font-rubik font-medium rounded-md text-sm shadow-lg border-2 transition duration-150 ease-in-out tracking-wide text-black">
+              <button className="px-6 min-w-32 text-white w-full py-3 font-rubik font-medium rounded-md text-sm shadow-lg border-2 transition duration-150 ease-in-out tracking-wide text-black">
                 LOGIN
               </button>
             </li>
