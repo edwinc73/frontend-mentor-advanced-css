@@ -13,17 +13,20 @@ const footerLinks = [
 function Footer() {
   return (
     <footer className="bg-neutral-dark text-white py-8">
-      <div className="max-w-6xl mx-auto flex justify-between">
-        <div className="flex">
+      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row lg:justify-between justify-center items-center lg:items-start gap-12 lg:gap-0">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-0 justify-center items-center lg:justify-start lg:items-start">
           <a href="./" className="nav__link">
             <img src={logo} alt="bookmark logo" />
           </a>
-          <ul className="flex ml-14 gap-14 ">
+          <ul
+            role="menubar"
+            className="flex lg:ml-14 gap-8 lg:gap-14 flex-col lg:flex-row items-center"
+          >
             {footerLinks.map((item) => {
               return (
                 <MenuItem
                   key={item.name}
-                  font="font-light"
+                  font="font-light text-sm tracking-wide text-center lg:text-left"
                   colorClass="text-white"
                 >
                   {item.name}

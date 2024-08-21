@@ -17,8 +17,8 @@ const DownloadCard = ({ item }) => {
   const { id, name, icon, version } = item;
   return (
     <div
-      className={`h-[23rem] w-72 bg-white shadow-lg flex flex-col justify-end items-center rounded-xl py-6 gap-6 ${
-        id == 0 ? "mt-0" : id == 1 ? "mt-10" : "mt-20"
+      className={`h-[23rem] w-72 bg-white shadow-xl flex flex-col justify-end items-center rounded-xl py-6 gap-6 ${
+        id == 0 ? "lg:mt-0" : id == 1 ? "lg:mt-10" : "lg:mt-20"
       }`}
     >
       <img src={icon} className="w-24" alt={`${name} icon`} />
@@ -26,7 +26,7 @@ const DownloadCard = ({ item }) => {
         <h3 className="font-semibold text-neutral-dark text-xl">
           Add to {name}
         </h3>
-        <p className="font-rubik text-gray-400 text-sm mt-2 tracking-wide">
+        <p className="font-rubik text-gray-500 text-sm mt-2 tracking-wide">
           Minimum version {version}
         </p>
       </div>
@@ -42,12 +42,12 @@ const DownloadCard = ({ item }) => {
 
 function Download() {
   return (
-    <Section id="download-section" className="pt-44 pb-16">
+    <Section id="download-section" className="mt-20">
       <SectionTitle
         body="We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize."
         title="Download the extension"
       ></SectionTitle>
-      <div className="download__cards flex justify-center gap-8 mt-12">
+      <div className="download__cards flex flex-col lg:flex-row items-center lg:items-start justify-center gap-12 lg:gap-8 mt-12">
         {downloadContent.map((item) => {
           return <DownloadCard item={item} key={item.id}></DownloadCard>;
         })}

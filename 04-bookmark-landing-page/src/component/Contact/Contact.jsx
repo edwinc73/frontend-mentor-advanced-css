@@ -19,34 +19,30 @@ function Contact() {
     }),
   });
 
-  useEffect(() => {
-    console.log(formik);
-  }, [formik]);
-
   return (
     <section id="contact-section" className="bg-primary-blue">
-      <div className="mx-auto max-w-6xl py-16 flex flex-col gap-8 w-screen h-full font-rubik text-white text-center">
+      <div className="mx-auto lg:max-w-6xl md:max-w-2xl py-16 px-8 flex flex-col gap-8 w-screen h-full font-rubik text-white text-center">
         <p className=" uppercase tracking-[0.35rem] text-xs font-medium">
           35,000+ already joined
         </p>
-        <h5 className="text-4xl font-medium max-w-[34rem] mx-auto">
+        <h4 className="text-2xl lg:text-4xl font-medium max-w-[34rem] mx-auto">
           Stay up-to-date with what we're doing
-        </h5>
+        </h4>
         <form
           noValidate
           onSubmit={formik.handleSubmit}
-          className="flex justify-center items-center gap-4 h-fit"
+          className="flex justify-center flex-col md:flex-row items-center gap-4 h-fit"
         >
-          <div className="flex flex-col relative">
+          <div className="flex flex-col relative md:w-fit w-full">
             <input
               autoComplete="on"
               placeholder="Enter your email address"
               name="email"
               type="email"
-              onBlur={formik.handleBlur}
+              onBlur={formik.handleBlurf}
               onChange={formik.handleChange}
               value={formik.values.email}
-              className={`py-3 text-neutral-dark px-3 font-rubik font-light z-[1] text-sm min-w-80 rounded-md ${
+              className={`py-3 text-neutral-dark px-3 font-rubik font-light z-[1] h-12 text-sm md:min-w-80 w-full rounded-md  ${
                 formik.errors.email ? "ring-2 ring-secondary-red" : ""
               }`}
             />
@@ -62,8 +58,11 @@ function Contact() {
             ) : null}
           </div>
           <button
+            aria-label="submit email"
             type="submit"
-            className="red px-6 min-w-32 py-3 font-rubik font-medium rounded-md text-sm shadow-lg border-2 transition duration-150 ease-in-out w-fit tracking-wide"
+            className={`${
+              formik.errors.email ? "mt-5 md:mt-0" : ""
+            } red px-6 min-w-32 w-full py-3 font-rubik font-medium rounded-md text-sm shadow-lg border-2 transition duration-150 ease-in-out md:w-fit tracking-wide `}
           >
             Contact us
           </button>

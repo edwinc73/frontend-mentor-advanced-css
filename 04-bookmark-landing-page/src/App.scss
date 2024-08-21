@@ -3,21 +3,21 @@
 }
 
 .right.highlight::before {
-  left: -31rem;
   border-radius: 0 999px 999px 0;
 }
 
 .left.highlight::before {
-  right: -13rem;
   border-radius: 999px 0 0 999px;
+  left: 20%;
 }
 
 .highlight:before {
   content: "";
   position: absolute;
+  top: 20%;
   background-color: hsl(231, 69%, 60%);
-  width: 60rem;
-  height: 22rem;
+  width: 100rem;
+  height: 80%;
   border: none;
   z-index: -1;
 }

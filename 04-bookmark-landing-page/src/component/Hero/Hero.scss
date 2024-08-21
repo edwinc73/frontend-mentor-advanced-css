@@ -1,0 +1,8 @@
+@import "../../App.scss";
+.hero__highlight {
+  @extend .highlight;
+  &:before {
+    border-radius: 999px 0 0 999px;
+    left: 20%;
+  }
+}

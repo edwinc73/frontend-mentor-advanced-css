@@ -16,7 +16,7 @@ function Faq() {
         body="Here are some of our FAQs. If you have any other questions
 you’d like answered please feel free to email us."
       ></SectionTitle>
-      <hr className="max-w-xl mx-auto mt-16" />
+      <hr className="opacity-0 lg:opacity-100 top-line max-w-xl mx-auto mt-16" />
 
       <div className="max-w-xl mx-auto flex flex-col gap-5 mt-5">
         {faq.map((item) => {
@@ -25,12 +25,15 @@ you’d like answered please feel free to email us."
               question={item.question}
               answer={item.answer}
               key={item.id}
+              id={item.id}
             ></FaqItem>
           );
         })}
       </div>
       <div className="w-fit mx-auto mt-12">
-        <Button>More Info</Button>
+        <Button type="blue" label="more faq">
+          More Info
+        </Button>
       </div>
     </Section>
   );
@@ -38,13 +41,15 @@ you’d like answered please feel free to email us."
 
 export default Faq;
 
-const FaqItem = ({ question, answer }) => {
+const FaqItem = ({ question, answer, id }) => {
   const [open, setOpen] = useState(false);
   return (
     <>
       <div
         role="button"
+        aria-expanded={open}
         tabIndex="0"
+        aria-controls={`faq-section${id}`}
         className="flex flex-col"
         onClick={() => {
           setOpen((prev) => !prev);
@@ -52,7 +57,7 @@ const FaqItem = ({ question, answer }) => {
       >
         <div className="font-rubik flex w-full">
           <div className="flex items-center justify-between w-full pr-4 hover:text-secondary-red transition-colors duration-100 ease-in-out">
-            <h4 className="font-normal text-lg">{question}</h4>
+            <h3 className="font-normal lg:text-lg text-normal">{question}</h3>
             {open ? (
               <img
                 src={arrowDown}
@@ -65,9 +70,11 @@ const FaqItem = ({ question, answer }) => {
           </div>
         </div>
         {open && (
-          <p className="font-rubik text-[1.05rem] leading-loose tracking-wide text-gray-500 mt-8 mb-4">
-            {answer}
-          </p>
+          <div id={`faq-section${id}`}>
+            <p className="font-rubik text-[1rem] lg:text-[1.05rem] leading-relaxed lg:leading-loose tracking-wide text-gray-600 mt-8 mb-4">
+              {answer}
+            </p>
+          </div>
         )}
       </div>
       <hr />
@@ -78,4 +85,5 @@ const FaqItem = ({ question, answer }) => {
 FaqItem.propTypes = {
   question: PropTypes.string,
   answer: PropTypes.string,
+  id: PropTypes.number,
 };

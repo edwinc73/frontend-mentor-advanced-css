@@ -1,13 +1,13 @@
 button {
   &.red {
-    color: white;
+    color: black;
     background-color: hsl(0, 94%, 66%);
     letter-spacing: 0.15rem;
     border-color: hsl(0, 94%, 66%);
     font-size: 0.75rem;
     &:hover {
       background-color: white;
-      color: hsl(0, 94%, 66%);
+      color: black;
       border-color: hsl(0, 94%, 66%);
     }
   }
@@ -22,7 +22,7 @@ button {
     }
   }
   &.light {
-    color: #6b7280;
+    color: #41454e;
     background-color: #f3f4f6;
     border-color: #f3f4f6;
     &:hover {

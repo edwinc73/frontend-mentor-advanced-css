@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 
-function Section({ children, id, className = "py-16" }) {
+function Section({ children, id, className }) {
   return (
-    <section id={id} className={`max-w-6xl px-0 ${className} mx-auto`}>
+    <section id={id} className={`max-w-6xl py-16 px-8 lg:${className} mx-auto`}>
       {children}
     </section>
   );
