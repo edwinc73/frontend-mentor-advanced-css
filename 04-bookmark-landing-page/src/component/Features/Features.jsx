@@ -15,6 +15,7 @@ const TabContent = ({ currentContent, currentTab }) => {
     >
       <div className="features__image relative feature__highlight mx-auto lg:w-6/12 h-full ">
         <img
+          loading="lazy"
           src={currentContent.img}
           className={`lg:h-[24rem] z-20 ${
             currentTab > 0
