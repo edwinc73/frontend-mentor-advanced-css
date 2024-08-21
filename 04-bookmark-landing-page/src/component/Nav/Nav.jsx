@@ -40,7 +40,7 @@ function Nav() {
         }}
         aria-label="open menu"
       >
-        s{!openNav && <img src={menu} alt="burger menu" />}
+        {!openNav && <img src={menu} alt="burger menu" />}
       </button>
       {/* side nav */}
       {openNav ? (
