@@ -1,12 +1,14 @@
 import "./App.scss";
-import bg1 from "./assets/Hi Res Render - 1.svg"
+import bg1 from "./assets/Hi Res Render - 1.svg";
 
 function App() {
-  return (<>
-    <div className="h-screen w-screen">
-      <img src={bg1} alt="" className="w-screen" />
-    </div>
-  </>);
+  return (
+    <>
+      <div className="w-screen h-screen fixed top-0 left-0">
+        <img src={bg1} alt="" className="w-full h-full object-cover" />
+      </div>
+    </>
+  );
 }
 
 export default App;
