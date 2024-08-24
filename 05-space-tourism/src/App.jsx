@@ -1,12 +1,15 @@
 import "./App.scss";
-import bg1 from "./assets/Hi Res Render - 1.svg";
+import bgDesktop from "./assets/home/background-home-desktop.jpg";
+import bgTablet from "./assets/home/background-home-tablet.jpg";
+import bgMobile from "./assets/home/background-home-mobile.jpg";
 
 function App() {
   return (
     <>
-      <div className="w-screen h-screen fixed top-0 left-0">
-        <img src={bg1} alt="" className="w-full h-full object-cover" />
-      </div>
+      <div
+        id="home-section"
+        className="background-image w-screen h-screen lg:p-0 "
+      ></div>
     </>
   );
 }
@@ -19,4 +22,4 @@ export default App;
 //       Space Let’s face it; if you want to go to space, you might as well
 //       genuinely go to outer space and not hover kind of on the edge of it. Well
 //       sit back, and relax because we’ll give you a truly out of this world
-//       experience! Explore
+//       experience-contain Explore

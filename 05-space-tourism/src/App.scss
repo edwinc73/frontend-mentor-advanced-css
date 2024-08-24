@@ -10,3 +10,17 @@ body,
   min-width: 100vw;
   min-height: 100vh;
 }
+
+.background-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  &#home-section {
+    background-image: url(./assets/home/background-home-desktop.jpg);
+    @media screen and (max-width: 1024px) {
+      background-image: url(./assets/home/background-home-tablet.jpg);
+    }
+    @media screen and (max-width: 680px) {
+      background-image: url(./assets/home/background-home-mobile.jpg);
+    }
+  }
+}
