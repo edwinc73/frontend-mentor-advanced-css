@@ -12,7 +12,7 @@ function Destination() {
       id="destination-section"
       className="background-image w-screen h-full min-h-screen"
     >
-      <article className="max-w-[1440px] min-h-screen text-center gap-300 mx-auto flex flex-col items-center lg:block md:pt-[134px] lg:pt-[160px] h-full md:pb-300 px-300 md:px-500 lg:px-[165px] pt-[112px] pb-300">
+      <div className="max-w-[1440px] min-h-screen text-center gap-300 mx-auto flex flex-col items-center lg:block md:pt-[134px] lg:pt-[160px] h-full md:pb-300 px-300 md:px-500 lg:px-[165px] pt-[112px] pb-300">
         {/* title */}
         <div className="destination__title text-white mx-auto md:ml-0 lg:text-left lg:text-2xl lg:mb-300">
           <span className="opacity-25 font-bold">01</span>
@@ -31,7 +31,7 @@ function Destination() {
             />
           </div>
           {/* explaination  */}
-          <div className="flex flex-col lg:text-left gap-300 md:gap-500 lg:pl-600 justify-center">
+          <article className="flex flex-col lg:text-left gap-300 md:gap-500 lg:pl-600 justify-center">
             <ul className="destination__tabs font-barlowCondense tracking-[0.15rem] flex justify-center lg:justify-start text-white gap-400 uppercase">
               {destinations.map(({ name }) => {
                 return (
@@ -81,9 +81,9 @@ function Destination() {
                 </p>
               </div>
             </div>
-          </div>
+          </article>
         </div>
-      </article>
+      </div>
     </section>
   );
 }
