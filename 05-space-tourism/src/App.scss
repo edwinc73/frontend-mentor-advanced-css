@@ -33,4 +33,40 @@ body,
       background-image: url(/assets/destination/background-destination-mobile.jpg);
     }
   }
+
+  &#crew-section {
+    background-image: url(/assets/crew/background-crew-desktop.jpg);
+    @media screen and (max-width: 1024px) {
+      background-image: url(/assets/crew/background-crew-tablet.jpg);
+    }
+    @media screen and (max-width: 680px) {
+      background-image: url(/assets/crew/background-crew-mobile.jpg);
+    }
+  }
+}
+
+.img-filter {
+  filter: contrast(1.1) saturate(1.2);
+}
+
+.fade-img {
+  mask-image: linear-gradient(
+    to top,
+    rgba(217, 217, 217, 0) 0%,
+    rgba(217, 217, 217, 1) 23%
+  );
+  @media screen and (max-width: 768px) {
+    mask-image: linear-gradient(
+      to top,
+      rgba(217, 217, 217, 0) 0%,
+      rgba(217, 217, 217, 1) 15%
+    );
+  }
+  @media screen and (max-width: 1024px) {
+    mask-image: linear-gradient(
+      to top,
+      rgba(217, 217, 217, 0) 0%,
+      rgba(217, 217, 217, 1) 23%
+    );
+  }
 }
