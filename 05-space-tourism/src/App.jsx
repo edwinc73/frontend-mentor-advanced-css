@@ -4,8 +4,11 @@ import "./App.scss";
 function App() {
   return (
     <>
-      <section id="home-section" className="background-image w-screen h-full">
-        <div className="max-w-[1440px] mx-auto  flex lg:items-end lg:pt-[160px] h-full min-h-screen md:pb-1600 px-500 lg:px-[165px] pt-1600 pb-300 lg:pb-1600 overflow-clip">
+      <section
+        id="home-section"
+        className="background-image w-screen min-h-screen h-full"
+      >
+        <div className="max-w-[1440px] mx-auto  flex lg:items-end lg:pt-[160px] h-full md:pb-1600 px-500 lg:px-[165px] pt-1600 pb-300 lg:pb-1600 overflow-clip max-h-[1024px]">
           <div className="home__container w-full flex flex-col lg:flex-row xl:justify-between items-center gap-800">
             <article className="home__description flex flex-col gap-300 w-full text-center lg:text-left max-w-lg">
               <span className="font-barlowCondense text-blueLight tracking-[0.15rem] md:tracking-wide md:text-2xl">

@@ -17,7 +17,7 @@ function Destination() {
         {/* title */}
         <Title section="destination" num="01" title="pick your destination" />
         {/* content */}
-        <div className="flex flex-col lg:flex-row lg:justify-center items-center gap-400 flex-grow h-full max-h-[1000px] ">
+        <div className="flex flex-col lg:flex-row lg:justify-center items-center gap-400 flex-grow h-full max-h-[1024px] ">
           {/* image */}
           <div className="destination__img max-w-[150px] lg:h-full md:max-w-[300px] lg:max-w-[480px] flex justify-center items-center py-[26.5px] md:py-[42px] lg:px-[1.85rem]">
             <img

@@ -15,7 +15,7 @@ function Technology() {
         {/* title */}
         <Title section="technology" num="03" title="Space launch 101" />
         {/* content */}
-        <div className="flex flex-col lg:w-full lg:flex-row lg:justify-start items-center  gap-400 flex-grow lg:text-left relative max-h-[1000px]">
+        <div className="flex flex-col lg:w-full lg:flex-row lg:justify-start items-center  gap-400 flex-grow lg:text-left relative max-h-[1024px]">
           {/* image */}
           <div className="technology__img lg:order-2 lg:w-1/2 w-screen max-h-[258px] md:max-h-[357px] lg:max-h-[600px] h-[600px] overflow-clip -mx-300 md:-mx-500 relative lg:flex lg:justify-center lg:items-center">
             <img
