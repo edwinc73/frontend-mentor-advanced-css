@@ -21,6 +21,7 @@ function Technology() {
             <img
               src={curTech.images.portrait}
               className="object-cover w-full absolute bottom-0 md:-bottom-2/3 left-0 right-0 lg:top-0 lg:bottom-0 lg:relative"
+              alt={curTech.description}
             />
           </div>
           {/* explaination  */}
@@ -29,19 +30,20 @@ function Technology() {
             <div className="technology__pagination flex lg:flex-col gap-200 lg:gap-400 mx-auto lg:bottom-0">
               {technology.map((item, index) => {
                 return (
-                  <span
+                  <button
+                    aria-label={`terminology ${index + 1}`}
                     key={"pagination-item" + item.name}
                     onClick={() => {
                       setCurTech(item);
                     }}
-                    className={`w-500 h-500 md:w-[56px] md:h-[56px] lg:w-[80px] lg:h-[80px] font-bellefair text-xl md:text-[24px] lg:text-3xl flex justify-center items-center  rounded-full border-white border-[1px] cursor-pointer hover:border-opacity-100 transition duration-100 ease-in-out ${
+                    className={`w-500 h-500 md:w-[56px] md:h-[56px] lg:w-[80px] lg:h-[80px] font-bellefair text-xl md:text-[24px] lg:text-3xl flex justify-center items-center  rounded-full border-white border-[1px] cursor-pointer hover:border-opacity-100 transition duration-100 ease-in-out focus:outline-blueLight outline-none outline-offset-4 outline-4 focus:border-opacity-100 ${
                       item.name == curTech.name
                         ? "text-blueDark bg-white border-opacity-0"
                         : "text-white bg-transparent border-opacity-25"
                     }`}
                   >
                     {index + 1}
-                  </span>
+                  </button>
                 );
               })}
             </div>

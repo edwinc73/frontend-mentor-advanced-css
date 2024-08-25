@@ -7,6 +7,7 @@ const NavItem = ({ link, name, id }) => {
     "py-0 md:py-[35px] border-e-2 border-b-0 md:border-b-2 md:border-e-0 border-transparent hover:border-white hover:border-opacity-50 transition duration-100 ease-in-out";
   return (
     <NavLink
+      role="menuitem"
       to={link}
       className={({ isActive, isPending }) =>
         isActive
@@ -33,7 +34,7 @@ function Nav() {
           <img
             src="Logo.svg"
             alt="space tourism logo"
-            className="w-500 lg:w-full"
+            className="w-500 h-500 md:w-600 md:h-600 "
           />
         </NavLink>
         <hr className="hidden lg:block border-1 w-full opacity-25 -mr-400 z-10" />
