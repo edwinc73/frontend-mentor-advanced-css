@@ -3,22 +3,24 @@ import { NavLink } from "react-router-dom";
 import "./Nav.scss";
 
 const NavItem = ({ link, name, id }) => {
+  const style =
+    "py-0 md:py-[35px] border-e-2 border-b-0 md:border-b-2 md:border-e-0 border-transparent hover:border-white hover:border-opacity-50 transition duration-100 ease-in-out";
   return (
-    <li className="py-0 md:py-[35px] border-e-2 border-b-0 lg:border-b-2 lg:border-e-0 border-transparent hover:border-white transition duration-100 ease-in-out">
-      <NavLink
-        to={link}
-        className={({ isActive, isPending }) =>
-          isPending ? "pending" : isActive ? "active" : ""
-        }
-      >
-        <span className="font-barlowCondense tracking-wide font-bold mr-150">
-          {id}
-        </span>
-        <span className="font-barlowCondense uppercase tracking-wide">
-          {name}
-        </span>
-      </NavLink>
-    </li>
+    <NavLink
+      to={link}
+      className={({ isActive, isPending }) =>
+        isActive
+          ? `border-opacity-100 border-white hover:border-opacity-100 ${style}`
+          : `pending ${style}`
+      }
+    >
+      <span className="font-barlowCondense tracking-wide font-bold mr-150">
+        {id}
+      </span>
+      <span className="font-barlowCondense uppercase tracking-wide">
+        {name}
+      </span>
+    </NavLink>
   );
 };
 

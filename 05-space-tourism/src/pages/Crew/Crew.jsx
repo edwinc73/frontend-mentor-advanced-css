@@ -45,8 +45,10 @@ function Crew() {
                     onClick={() => {
                       setMember(item.name);
                     }}
-                    className={`w-[10px] h-[10px] lg:w-[15px] lg:h-[15px] rounded-full bg-white ${
-                      item.name == curMember.name ? "opacity-100" : "opacity-20"
+                    className={`w-[10px] h-[10px] lg:w-[15px] lg:h-[15px] rounded-full bg-white hover:opacity-50 cursor-pointer transition duration-100 ease-in-out ${
+                      item.name == curMember.name
+                        ? "opacity-100 hover:opacity-100"
+                        : "opacity-20"
                     }`}
                   ></span>
                 );
