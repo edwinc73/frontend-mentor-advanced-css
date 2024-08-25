@@ -28,7 +28,10 @@ function App() {
             {/* cta */}
             <div className="home__cta w-full h-full lg:h-fit flex items-center justify-center lg:items-end lg:justify-end">
               <Link to="/destination">
-                <button className="bg-white text-blueDark hover:text-opacity-50 relative h-[144px] w-[144px] md:h-[272px] md:w-[272px] uppercase before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:z-0 before:hover:opacity-5 before:opacity-0 before:transition before:duration-100 before:ease-in-out before:rounded-full before:-translate-y-1/2 before:h-[320px] before:w-[320px] md:before:h-[448px] md:before:w-[448px] before:bg-white rounded-full font-bellefair text-lg md:text-3xl">
+                <button
+                  aria-label="see destinations"
+                  className="bg-white text-blueDark hover:text-opacity-50 relative h-[144px] w-[144px] md:h-[272px] md:w-[272px] uppercase before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:z-0 before:hover:opacity-5 before:opacity-0 before:transition before:duration-100 before:ease-in-out before:rounded-full before:-translate-y-1/2 before:h-[320px] before:w-[320px] md:before:h-[448px] md:before:w-[448px] before:bg-white rounded-full font-bellefair text-lg md:text-3xl"
+                >
                   Explore
                 </button>
               </Link>

@@ -32,6 +32,7 @@ function Destination() {
               {destinations.map(({ name }) => {
                 return (
                   <button
+                    aria-label={`see ${name}`}
                     key={name}
                     onClick={() => {
                       setDestination(name);

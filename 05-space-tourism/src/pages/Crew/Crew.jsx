@@ -38,9 +38,10 @@ function Crew() {
               </p>
             </div>
             <div className="crew__pagination flex gap-100 lg:gap-500 mx-auto lg:absolute lg:bottom-0">
-              {crew.map((item) => {
+              {crew.map((item, index) => {
                 return (
                   <button
+                    aria-label={`crew ${index + 1}`}
                     key={"pagination-item" + item.name}
                     onClick={() => {
                       setMember(item.name);
