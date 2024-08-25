@@ -19,7 +19,7 @@ function Crew() {
         {/* title */}
         <Title section="crew" num="02" title="MEET YOUR CREW" />
         {/* content */}
-        <div className="flex flex-col lg:flex-row lg:justify-center items-center gap-400 flex-grow lg:text-left relative max-h-[1000px]">
+        <div className="flex flex-col lg:flex-row lg:justify-center items-center gap-400 flex-grow lg:text-left relative max-h-[1024px]">
           {/* explaination  */}
           <div className="crew__explaination flex flex-col gap-300 pt-500 lg:pt-0 flex-grow lg:w-1/2">
             <div className="crew_rankandname">

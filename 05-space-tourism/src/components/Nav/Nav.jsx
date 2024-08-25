@@ -5,7 +5,12 @@ import "./Nav.scss";
 const NavItem = ({ link, name, id }) => {
   return (
     <li className="py-0 md:py-[35px] border-e-2 border-b-0 lg:border-b-2 lg:border-e-0 border-transparent hover:border-white transition duration-100 ease-in-out">
-      <NavLink to={link}>
+      <NavLink
+        to={link}
+        className={({ isActive, isPending }) =>
+          isPending ? "pending" : isActive ? "active" : ""
+        }
+      >
         <span className="font-barlowCondense tracking-wide font-bold mr-150">
           {id}
         </span>
