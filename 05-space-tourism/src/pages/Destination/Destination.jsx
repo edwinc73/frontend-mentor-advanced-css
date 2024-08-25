@@ -28,26 +28,25 @@ function Destination() {
           </div>
           {/* explaination  */}
           <article className="flex flex-col lg:text-left gap-300 md:gap-500 lg:pl-600 justify-center">
-            <ul className="destination__tabs font-barlowCondense tracking-[0.15rem] flex justify-center lg:justify-start text-white gap-400 uppercase">
+            <div className="destination__tabs tracking-[0.15rem] flex justify-center lg:justify-start text-white gap-400">
               {destinations.map(({ name }) => {
                 return (
-                  <li
-                    tabIndex={0}
+                  <button
+                    key={name}
                     onClick={() => {
                       setDestination(name);
                     }}
-                    key={name}
                     className={`pb-100 border-b-2 ${
                       destination == name
                         ? "border-white"
                         : "border-transparent text-blueLight"
-                    } lg:border-b-2 hover:border-white transition duration-100 ease-in-out cursor-pointer`}
+                    } lg:border-b-2 hover:border-white transition duration-100 ease-in-out cursor-pointer uppercase font-barlowCondense`}
                   >
                     {name}
-                  </li>
+                  </button>
                 );
               })}
-            </ul>
+            </div>
             <div className="destination__name text-white -mb-100 lg:-mb-300">
               <h2 className="font-bellefair uppercase text-4xl leading-tight md:text-5xl">
                 {curData.name}
