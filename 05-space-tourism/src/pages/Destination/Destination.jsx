@@ -41,7 +41,7 @@ function Destination() {
                       destination == name
                         ? "border-white"
                         : "border-transparent text-blueLight"
-                    } lg:border-b-2 hover:border-white transition duration-100 ease-in-out`}
+                    } lg:border-b-2 hover:border-white transition duration-100 ease-in-out cursor-pointer`}
                   >
                     {name}
                   </li>

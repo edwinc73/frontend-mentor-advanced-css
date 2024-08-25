@@ -34,7 +34,7 @@ function Technology() {
                     onClick={() => {
                       setCurTech(item);
                     }}
-                    className={`w-500 h-500 md:w-[56px] md:h-[56px] lg:w-[80px] lg:h-[80px] font-bellefair text-xl md:text-[24px] lg:text-3xl flex justify-center items-center  rounded-full border-white border-[1px]  ${
+                    className={`w-500 h-500 md:w-[56px] md:h-[56px] lg:w-[80px] lg:h-[80px] font-bellefair text-xl md:text-[24px] lg:text-3xl flex justify-center items-center  rounded-full border-white border-[1px] cursor-pointer hover:border-opacity-100 transition duration-100 ease-in-out ${
                       item.name == curTech.name
                         ? "text-blueDark bg-white border-opacity-0"
                         : "text-white bg-transparent border-opacity-25"
