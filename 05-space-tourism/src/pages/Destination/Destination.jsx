@@ -13,7 +13,7 @@ function Destination() {
       id="destination-section"
       className="background-image w-screen h-full min-h-screen"
     >
-      <div className="max-w-[1440px] min-h-screen text-center gap-300 mx-auto flex flex-col items-center lg:flex md:pt-[134px] lg:pt-[160px] h-full md:pb-300 px-300 md:px-500 lg:px-[165px] pt-[112px] pb-300 lg:pb-600">
+      <div className="max-w-[1440px] min-h-screen text-center gap-300 mx-auto flex flex-col items-center lg:flex md:pt-[134px] lg:pt-[160px] md:pb-300 px-300 md:px-500 lg:px-[165px] pt-[112px] pb-300 lg:pb-600">
         {/* title */}
         <Title section="destination" num="01" title="pick your destination" />
         {/* content */}
