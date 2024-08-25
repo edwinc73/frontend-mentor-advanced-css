@@ -23,15 +23,20 @@ function Destination() {
             <img
               src={curData.images.webp}
               alt={curData.name}
-              className="w-full h-full lg:min-w-[250px]"
+              className="w-full h-full object-contains lg:min-w-[250px]"
             />
           </div>
           {/* explaination  */}
           <article className="flex flex-col lg:text-left gap-300 md:gap-500 lg:pl-600 justify-center">
-            <div className="destination__tabs tracking-[0.15rem] flex justify-center lg:justify-start text-white gap-400">
+            <div
+              role="tablist"
+              className="destination__tabs tracking-[0.15rem] flex justify-center lg:justify-start text-white gap-400"
+            >
               {destinations.map(({ name }) => {
                 return (
                   <button
+                    role="tab"
+                    aria-selected={curData.name == name}
                     aria-label={`see ${name}`}
                     key={name}
                     onClick={() => {

@@ -21,6 +21,7 @@ function Technology() {
             <img
               src={curTech.images.portrait}
               className="object-cover w-full absolute bottom-0 md:-bottom-2/3 left-0 right-0 lg:top-0 lg:bottom-0 lg:relative"
+              alt={curTech.description}
             />
           </div>
           {/* explaination  */}

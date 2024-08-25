@@ -37,7 +37,7 @@ function Crew() {
                 {curMember.bio}
               </p>
             </div>
-            <div className="crew__pagination flex gap-100 lg:gap-500 mx-auto lg:absolute lg:bottom-0">
+            <div className="crew__pagination flex  mx-auto lg:absolute lg:bottom-0">
               {crew.map((item, index) => {
                 return (
                   <button
@@ -46,12 +46,14 @@ function Crew() {
                     onClick={() => {
                       setMember(item.name);
                     }}
-                    className={`w-[10px] h-[10px] lg:w-[15px] lg:h-[15px] rounded-full bg-white hover:opacity-50 cursor-pointer transition duration-100 ease-in-out focus:outline-blueLight outline-none outline-offset-4 outline-2 focus:opacity-75 ${
+                    className={`p-50 lg:px-[20px] hover:opacity-50 cursor-pointer transition duration-100 ease-in-out focus:outline-blueLight outline-none outline-offset-4 outline-2 focus:opacity-75 ${
                       item.name == curMember.name
-                        ? "opacity-100 hover:opacity-100"
+                        ? "opacity-100 hover:opacity-100 focus:opacity-100"
                         : "opacity-20"
                     }`}
-                  ></button>
+                  >
+                    <span className="w-[10px] h-[10px] lg:w-[15px] lg:h-[15px] rounded-full bg-white block"></span>
+                  </button>
                 );
               })}
             </div>
