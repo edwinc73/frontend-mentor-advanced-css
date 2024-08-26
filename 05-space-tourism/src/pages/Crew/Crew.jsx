@@ -7,8 +7,6 @@ function Crew() {
   const [member, setMember] = useState("Douglas Hurley");
 
   const curMember = crew.find((item) => item.name === member);
-  const index = crew.indexOf(curMember);
-  console.log(index);
 
   return (
     <section

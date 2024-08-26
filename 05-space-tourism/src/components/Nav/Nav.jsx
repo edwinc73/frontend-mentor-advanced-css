@@ -9,10 +9,10 @@ const NavItem = ({ link, name, id }) => {
     <NavLink
       role="menuitem"
       to={link}
-      className={({ isActive, isPending }) =>
+      className={({ isActive }) =>
         isActive
-          ? `border-opacity-100 border-white hover:border-opacity-100 ${style}`
-          : `pending ${style}`
+          ? `${style} border-opacity-100 border-white hover:border-opacity-100 focus:border-opacity-100`
+          : ` ${style}`
       }
     >
       <span className="font-barlowCondense tracking-wide font-bold mr-150">
@@ -28,7 +28,7 @@ const NavItem = ({ link, name, id }) => {
 function Nav() {
   const [openNav, setOpenNav] = useState(false);
   return (
-    <nav className="max-w-[1440px] mx-auto absolute p-300 md:p-0 lg:pl-800 top-0 left-0 right-0 text-white flex justify-between items-center">
+    <nav className="max-w-[1440px] mx-auto absolute p-300 md:p-0 lg:pl-800 top-0 left-0 right-0 text-white flex justify-between items-center z-50">
       <div className=" flex w-full gap-800 md:justify-center items-center lg:mt-500 ">
         <NavLink to="/" className="logo-container">
           <img
