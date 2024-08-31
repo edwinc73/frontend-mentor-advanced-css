@@ -2,11 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-  useLocation,
-} from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import "./index.css";
 import { Layout } from "./Layout.jsx";
 import App from "./App.jsx";
@@ -45,49 +41,49 @@ const PageTransitionWrapper = ({ children }) => {
   );
 };
 
-const router = createBrowserRouter([
-  {
-    element: <Layout />,
-    errorElement: <div>oops</div>,
-    children: [
-      {
-        path: "/",
-        element: (
+const AppRoutes = () => (
+  <Routes>
+    <Route path="/" element={<Layout />}>
+      <Route
+        index
+        element={
           <PageTransitionWrapper>
             <App />
           </PageTransitionWrapper>
-        ),
-      },
-      {
-        path: "/destination",
-        element: (
+        }
+      />
+      <Route
+        path="destination"
+        element={
           <PageTransitionWrapper>
             <Destination />
           </PageTransitionWrapper>
-        ),
-      },
-      {
-        path: "/Crew",
-        element: (
+        }
+      />
+      <Route
+        path="crew"
+        element={
           <PageTransitionWrapper>
             <Crew />
           </PageTransitionWrapper>
-        ),
-      },
-      {
-        path: "/technology",
-        element: (
+        }
+      />
+      <Route
+        path="technology"
+        element={
           <PageTransitionWrapper>
             <Technology />
           </PageTransitionWrapper>
-        ),
-      },
-    ],
-  },
-]);
+        }
+      />
+    </Route>
+  </Routes>
+);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
   </StrictMode>
 );
